@@ -1,0 +1,539 @@
+
+
+*{
+    margin: 0; padding: 0;
+    box-sizing: border-box;
+    font-family: Cambria, Cochin, Georgia, Times, 'Times New Roman', serif;
+    outline: none; border: none;
+    text-decoration: none;
+    text-transform: none;
+    transition: 0.1s linear;
+}
+
+html{
+    font-size: 62.5%;
+    scroll-behavior: smooth;
+    scroll-padding-top: 6rem;
+    overflow-x: hidden;
+}
+section{
+    padding: 2rem 9%  ;
+}
+.heading{
+    text-align: center;
+    font-family: Georgia, 'Times New Roman', Times, serif;
+    font-size: 25px;
+    color: black;
+    padding: 2px;
+    margin: 15px;
+}
+.heading span{
+    color: rgb(109, 57, 65);
+}
+.btn{
+    display: inline-block;
+    margin-top: 1rem;
+    border-radius: 5rem;
+    background: rgb(152, 85, 96);
+    color: white;
+    padding: 12px 12px;
+    cursor: pointer;
+    font-size: 17px;
+    font-weight: bold;
+}
+.btn:hover{
+    background-color: rgb(219, 135, 135);
+    color: rgb(93, 45, 53);
+    font-weight: bold;
+} 
+header{
+    position: fixed;
+    top: 0; left: 0; right: 0;
+    margin-left: 0;
+    background: rgb(231, 181, 189);
+    padding: 2px 1%;
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+    z-index: 0;
+    box-shadow: 0.5rem 1rem rgb(203, 134, 145);
+}
+
+header .logonama{
+    font-size: 35px;
+    color: rgb(117, 53, 65);
+    font-weight: bold;
+}
+
+header .logo{
+    display: flex;
+    align-items: center;
+    margin-left: 1%;
+}
+header .logo .fotologo img{
+    height: 95px;   
+}
+
+header .navbar a{
+    font-size: 20px;
+    padding: 2px;
+    color: black;
+    margin-left: 35px;
+}
+
+header .navbar a:hover{
+    color: white;
+}
+
+header .icon a{
+    font-size: 20px;
+    color: rgb(107, 60, 68);
+    margin-left: 15px;   
+    margin-right: 10px;
+}
+header .icon a:hover{
+    color: white;
+}
+
+header #toggler{
+    display: none;
+}
+
+header .fa-bars{
+    font-size: 25px;
+    color: rgb(160, 82, 95);
+    border-radius: 0;
+    padding: 15px 15px;
+    cursor: pointer;
+    border: 2px solid rgb(131, 84, 92);
+    margin-left: 55px;
+    margin-right: none;
+}
+header .fa-bars:hover{
+    color: white;
+}
+
+.roboto-slab-uniquifier {
+  font-family: "Roboto Slab", serif;
+  font-optical-sizing: auto;
+  font-weight: normal;
+  font-style: normal;
+}
+.home{
+    display: flex;
+    align-items: center;
+    min-height: 100vh;
+    background: url(../bg4.png)no-repeat;
+    background-size: cover;
+    background-position: center;
+}
+
+.home .konten{
+    max-width: 50rem;
+}
+
+.home .konten h3{
+    font-size: 26px;
+    color: rgb(68, 30, 36);
+    margin-left: 35px;
+}
+.home .konten p{
+    text-align: justify;
+}
+.home .konten span{
+    font-size: 17px;
+    color: black;
+    padding: 1rem 0;
+    line-height: 1.5;
+    margin-left: 35px;
+    font-style: italic;
+}
+
+.home .konten p{
+    font-size: 17px;
+    margin-left: 35px;
+}
+.tentangkami .row{
+    display: flex;
+    align-items: center;
+    gap: 2rem;
+    flex-wrap: wrap;
+    padding: 2rem 0;
+    padding-bottom: 3rem;
+}
+.tentangkami .row .video-container{
+    flex: 1 1 40rem;
+    position: static;
+}
+.tentangkami .row .video-container video{
+ width: 40%;
+ border: 10px solid white;
+ border-radius: 50px;
+ height: 20%;
+ object-fit: cover;
+ margin-left: 195px; margin-right: 195px;
+}
+
+.tentangkami .row .content{
+    flex: 1 1 40rem;
+}
+.tentangkami .row .content h3{
+    font-size: 17px;
+    color: black;
+}
+.tentangkami .row .content p{
+    font-size: 17px;
+    color: black;
+    padding: .5rem 0;
+    padding-top: 1rem;
+    line-height: 1.5rem;
+    margin-top: 3px;
+    text-align: justify;
+}
+.icon-container .icons:hover{
+    background-color: rgb(205, 162, 169);
+    transform: scale(1.1);
+}
+.icon-container{
+    background: white;
+    display: flex;
+    flex-wrap: wrap;
+    gap: 1.5rem;
+    padding-top: 5rem;
+    padding-bottom: 5rem;
+}
+
+.icon-container .icons{
+    background: white;
+    border: 2px solid rgb(205, 162, 169);
+    padding: 15px;
+    display: flex;
+    align-items: center;
+    flex: 1 1 15rem ;
+}
+
+.icon-container .icons img{
+    height: 150px;
+    margin-right: 35px;
+    margin-left: 12px;
+    position: static;
+}
+.icon-container .icons h3{
+    color: rgb(160, 84, 96);
+    padding-bottom: 25px;
+    font-size: 20px;
+}
+.icon-container .icons span{
+    color: rgb(160, 84, 96);
+    font-size: 18px;
+}
+
+.produk .box-container{
+    display: flex;
+    flex-wrap: wrap;
+    gap: 1.5rem;
+}
+
+.produk .box-container .box{
+    flex: 1 1 30rem;
+    box-shadow: 0 .5rem 1.5rem rgb(155, 92, 102);
+    border-radius: 5px;
+    position: static;
+}
+
+.produk .box-container .box .image{
+    position: static;
+    text-align: center;
+    padding-top: 15px;
+    overflow: hidden;
+    border: 2px solid rgb(155, 98, 107);
+}
+
+.produk .box-container .box .image img{
+    position: static;
+    height: 250px;
+    margin-left: 38px;
+    margin-top: 50px;
+    margin-right: 25px;
+}
+
+.produk .box-container .box:hover .image img{
+    transform: scale(1.1);
+    position: static;
+}
+.produk .box-container .box .image .icons{
+    position: static;
+    bottom: -7rem; left: 0; right: 0;
+    display: flex;
+}
+.produk .box-container .box .image .icons a{
+    height: 4rem;
+    line-height: 2rem;
+    font-size: 15px;
+    margin-top: 50px;
+    width: 25%;
+    color: rgb(95, 43, 51);
+    margin-right: 1px;
+}
+.produk .box-container .box .image .icons .cart-btn{
+    border-left: 1rem solid white;
+    border-right: 1rem solid white;
+    width: 50%;
+    font-weight: bold;
+}
+.produk .box-container .box .image .icons a:hover{
+   color: rgb(209, 155, 164);
+}
+.produk .box-container .box:hover .image .icons{
+    bottom: 0;
+}
+
+.produk .box-container .box .content{
+    padding: 2px;
+    text-align: center;
+}
+.produk .box-container .box .content h3{
+    font-size: 18px;
+    color: rgb(125, 51, 63);
+}
+
+.produk .box-container .box .content .price{
+    font-size: 18px;
+    color: rgb(125, 51, 63);
+    font-weight: bold;
+    padding-top: 5px;
+}
+.produk .box-container .box .content .price span{
+    font-size: 12px;
+    color: rgb(187, 133, 142);
+    font-weight: lighter;
+    text-decoration: line-through;
+}
+.review .box-container{
+    display: flex;
+    flex-wrap: wrap;
+    gap: 1.5rem;
+}
+.review .box-container .box{
+    flex: 1 1 30rem;
+    box-shadow: 2px solid rgb(103, 59, 68);
+    border-radius: 5px;
+    padding: 5px 10px;
+    position: static;
+    border: 2px solid rgb(158, 103, 112);
+}
+.review .box-container .box .start i{
+    color: rgb(156, 83, 95);
+    font-size: 25px;
+    margin-top:20px;
+    margin-left: 10px;
+}
+.review .box-container .box p{
+    color: rgb(88, 43, 50);
+    font-size: 25px;
+    line-height: 25px;
+    padding-top: 15px;
+}
+.review .box-container .box .user{
+    display: flex;
+    align-items: center;
+    padding-top: 15px;
+}
+.review .box-container .box .user img{
+    height: 280px;
+    width: 250px;
+    border-radius: 50%;
+    object-fit: cover;
+    margin-right: 0;
+}
+.review .box-container .box .user h3{
+    font-size: 25px;
+    color: black;
+}
+.review .box-container .box .user h3{
+    font-size: 20px;
+    color: rgb(115, 75, 81);
+} 
+
+.kontak .row{
+    display: flex;
+    flex-wrap: wrap-reverse;
+    gap: 2px;      
+    align-items: center;
+}
+.kontak .row form{
+    flex: 1 1 10rem;
+    padding: 2rem 2.5rem;
+    background: rgb(204, 147, 157);
+    border-radius: 5rem;
+}
+.kontak .row form .box{
+    padding: 12px;
+    font-size: 20px;
+    color: black;
+    text-transform: none;
+    border: 2px solid rgb(186, 131, 139);
+    border-radius: 2px;
+    margin: 7rem 0;
+    margin-top: 12px;
+    margin-bottom: 12px;
+    width: 100%;
+}
+.kontak .row form .box:focus{
+    border-color: rgb(204, 147, 157);
+}
+.kontak .row form textarea{
+    height: 150px;
+    resize: none;
+}
+
+
+.footer .box-container{
+    display: flex;
+    flex-wrap: wrap;
+    gap: 1.5rem;
+}
+
+.footer .box-container .box h3{
+    flex: 1 1 25rem;
+}
+.footer .box-container .box h3{
+    font-size: 20px;
+    padding: 1rem 0;
+    color: black;
+    margin-top: 125px;
+    margin-left: 110px;
+    text-align: center;
+}
+.footer .box-container .box a{
+    display: block;
+    font-size: 15px;
+    padding: 8px;
+    color: rgb(195, 141, 150);
+    margin-bottom: 15px;
+    margin-top: 10px;
+    margin-left: 120px;
+}
+.footer .box-container .box a:hover{
+    color: rgb(106, 64, 69);
+    text-decoration: underline;
+}
+.footer .box-container img{
+   padding: 1px;
+   position: static;
+   height: 115px;
+   margin-top: 100px;
+   margin-bottom: 20px;
+   margin-right: 350px;
+   margin-left: 555px;
+}
+ .footer{
+    text-align: center;
+    padding: auto;
+ }
+ .footer .credit span{
+    color: rgb(114, 69, 77);
+ }
+ .footer .credit{
+    font-style: italic;
+ }
+.footer .credit a{
+    color: rgb(204, 121, 133);
+    margin-left: 5px;
+}
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+/* media queries*/
+@media(max-width:991px){
+    html{
+        font-size: 20px;
+    }
+    header{
+        padding: 2px;
+    }
+    
+    section{
+        padding: 2px;
+    }
+    .home {
+        background-position: left;
+    }
+}
+@media(max-width:768px){
+    header .fa-bars{
+        display: block;
+        margin-left: 22px;
+    }
+    header .icon{
+     font-size: 19px;   
+    }
+    header .navbar{
+        position: absolute;
+        top: 0; left: 0; right: 0;
+        background-color: pink;
+        border-top: .1rem solid pink;
+        clip-path: polygon(0 0, 100% 0, 100% 0, 0 0);
+    }
+    header #toggler:checked~ .navbar{
+        clip-path: polygon(0 0, 100% 0, 100% 100%, 0 100%);
+    }
+    header .navbar a{
+        margin: 0.5px;
+        padding: 10px;
+        background: rgba(179, 109, 120, 0.878);
+        border: 1rem solid pink;
+        display: block ;
+    }
+    .home .konten h3{
+        font-size: 23px;
+    }
+    
+    .home .konten span{
+        font-size: 12px;
+    }
+    .home .konten p{
+        font-size: 12px;
+    }
+    .icon-container .icons h3{
+        font-size: 18px;
+    }
+    .icon-container .icons span{
+        font-size: 15px;
+    }
+    
+}
+@media(max-width:450px){
+    html{
+        font-size: 15px;
+    }
+    
+    header .icon{
+     font-size: 15px;   
+    }
+    header .fa-bars{
+        display: block;
+        margin-left: 12px;
+    }
+    .heading {
+        font-size: 12px;
+    }
+}
